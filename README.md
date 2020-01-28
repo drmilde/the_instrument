@@ -1,6 +1,11 @@
 # the_instrument
 
-Das Orchesterinstrument ...
+Das Orchesterinstrument erlaubt die Interaktion mit dem 
+zentralen Soundmodul, und steuert dort eine ganze Reihe
+von Klangparametern.
+
+Die Instrumentalisten bewegen das mobile System im Raum,
+und übermitteln die Bewegungsinsformation.
 
 
 ## Eigenschaften
