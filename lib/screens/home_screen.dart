@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_instrument/screens/display_sensor_screen.dart';
 
 import 'color_screen.dart';
 
@@ -18,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
   }
 
-  void setColor (Color c) {
+  void setColor(Color c) {
     setState(() {
       clr = c;
     });
@@ -39,10 +40,15 @@ class _HomeScreenState extends State<HomeScreen> {
               RaisedButton(
                 child: Text("Yellow"),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ColorScreen())
-                  );
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ColorScreen()));
+                },
+              ),
+              RaisedButton(
+                child: Text("Sensoren"),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DisplaySensorScreen()));
                 },
               )
             ],
